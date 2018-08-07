@@ -1,4 +1,11 @@
 工作区-->暂存区-->分支-->
 
 
-创建代码仓库	git init
+创建代码仓库		git init
+添加到暂存区    	git add 文件		添加所有的git add .
+提交的本地分支  	git commit -m "新增了一个***(信息)"
+邮箱    		git config --global user.email "1524815151@qq.com"
+昵称 			git config --global user.name "名字"
+再次提交本地分支  	git commit -m "新增了一个***(信息)"
+
+	可以多次add ,然后一次commit,若修改了,则需要再次add
