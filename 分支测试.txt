@@ -1,0 +1,10 @@
+分支
+git pull origin master
+git branch 分支名字
+			查看分支:git branch
+			切换到分支:git checkout 分支名
+git add . 
+git commit -m "信息"
+
+分支整合(master)
+git merge 分支名
