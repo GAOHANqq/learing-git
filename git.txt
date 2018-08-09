@@ -12,7 +12,8 @@
 	git log  查看提交了什么内容到分支上面,可以通过commit的id回到以前的版本
 	ssh-keygen -t rsa -C "1271448267@qq.com" 配置ssh文件
 
-关联本地和远程仓库	git remote add origin git@github.com:GAOHANqq/learing-git.git
+关联本地和远程仓库	
+git remote add origin git@github.com:GAOHANqq/learing-git.git
 先拉后推
 git pull origin master
 git push -u origin master (-u可省略,oringin也可以更改)
@@ -33,3 +34,9 @@ git commit -m "信息"
 分支整合(master)
 git merge 分支名
 
+删除分支:
+git branch -d 分支名
+
+版本回退 :
+git log 
+git reset --hard 版本id
