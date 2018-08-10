@@ -1,0 +1,42 @@
+工作区-->暂存区-->分支------>远程代码仓库
+
+
+创建代码仓库		git init
+添加到暂存区    	git add 文件		添加所有的git add .
+提交的本地分支  	git commit -m "新增了一个***(信息)"
+邮箱    		git config --global user.email "1524815151@qq.com"
+昵称 			git config --global user.name "名字"
+再次提交本地分支  	git commit -m "新增了一个***(信息)"
+
+	可以多次add ,然后一次commit,若修改了,则需要再次add
+	git log  查看提交了什么内容到分支上面,可以通过commit的id回到以前的版本
+	ssh-keygen -t rsa -C "1271448267@qq.com" 配置ssh文件
+
+关联本地和远程仓库	
+git remote add origin git@github.com:GAOHANqq/learing-git.git
+先拉后推
+git pull origin master
+git push -u origin master (-u可省略,oringin也可以更改)
+
+克隆 
+git init
+git clone git@github.com:GAOHANqq/learing-git.git
+
+
+分支
+git pull origin master
+git branch 分支名字
+			查看分支:git branch
+			切换到分支:git checkout 分支名
+git add . 
+git commit -m "信息"
+
+分支整合(master)
+git merge 分支名
+
+删除分支:
+git branch -d 分支名
+
+版本回退 :
+git log 
+git reset --hard 版本id
