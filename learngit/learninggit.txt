@@ -1,0 +1,43 @@
+git配置:	$ git config --global user.name "Your Name"
+		$ git config --global user.email "email@example.com"
+
+创建目录:	$ mkdir 目录名
+切换目录	$ cd 目录名
+显示当前目录	$ pwd 
+
+
+初始化一个Git仓库	$git init
+添加文件到Git仓库，分两步：
+			$git add "文件名"	注意，可反复多次使用，添加多个文件；
+			$git commit -m "信息"
+
+查看仓库当前的状态	$git status
+查看修改内容		$git diff 文件名
+
+版本回退		$git reset --hard commit_id
+穿梭前，查看提交历史	$git log
+重返未来，查看命令历史	$git reflog
+
+丢弃工作区的修改     	$git checkout -- 文件名
+
+丢弃暂存区的修改: 一) 	$git reset HEAD 文件名
+		  二)	$git checkout -- 文件名
+
+删除文件		$git rm 文件名
+
+
+关联远程仓库		$git remote add origin git@server-name:path/repo-name.git；
+
+第一次推送所有内容	$git push -u origin master
+此后推送		$git push origin master
+
+分支:
+查看分支：		$git branch
+创建分支：		$git branch 分支名
+切换分支：		$git checkout 分支名
+创建+切换分支：		$git checkout -b 分支名
+合并某分支到当前分支：	$git merge 分支名
+删除分支：		$git branch -d 分支名
+
+分支合并		$git merge分支名
+--no-ff参数就可以用普通模式合并，合并后的历史有分支($git merge --no-ff -m "信息"分支名)
